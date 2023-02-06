@@ -18,6 +18,13 @@ pkgs.mkShell
   # lists all packages in development environment
   buildInputs = with pkgs; [
     bash
-    neovim
-  ];
+
+    ocamlPackages.ocaml
+    ocamlPackages.dune_3
+    ocamlPackages.findlib
+    ocamlPackages.utop
+    ocamlPackages.odoc
+    ocamlPackages.ocaml-lsp
+    ocamlformat
+  ] ++ [ neovim ];
 }
