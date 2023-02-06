@@ -26,5 +26,10 @@ pkgs.mkShell
     ocamlPackages.odoc
     ocamlPackages.ocaml-lsp
     ocamlformat
+
+    ocamlPackages.janeStreet.base
+    ocamlPackages.janeStreet.async
+    ocamlPackages.janeStreet.core_unix
+    ocamlPackages.janeStreet.ppx_let
   ] ++ [ neovim ];
 }

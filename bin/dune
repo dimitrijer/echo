@@ -1,4 +1,5 @@
 (executable
  (public_name echo)
  (name main)
- (libraries echo))
+ (preprocess (pps ppx_let))
+ (libraries echo core async core_unix.command_unix))

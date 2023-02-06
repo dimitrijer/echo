@@ -1,2 +1,4 @@
 (library
- (name echo))
+ (name echo)
+ (preprocess (pps ppx_let))
+ (libraries core async))
